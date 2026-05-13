@@ -1,0 +1,688 @@
+{
+  "model_type": "crop_classifier",
+  "version": "4.0",
+  "crops": [
+    "wheat",
+    "mustard",
+    "chickpea",
+    "barley",
+    "lentil",
+    "pea",
+    "potato",
+    "onion",
+    "garlic",
+    "spinach",
+    "carrot",
+    "coriander",
+    "fenugreek",
+    "linseed",
+    "safflower",
+    "gram_fodder",
+    "radish",
+    "cauliflower",
+    "cabbage",
+    "tomato_rabi",
+    "rice",
+    "maize",
+    "cotton",
+    "soybean",
+    "groundnut",
+    "sunflower",
+    "bajra",
+    "jowar",
+    "urad",
+    "moong",
+    "turmeric",
+    "ginger",
+    "tur",
+    "sesame",
+    "castor",
+    "cowpea",
+    "bitter_gourd",
+    "brinjal",
+    "okra",
+    "chilli",
+    "watermelon",
+    "cucumber",
+    "moong_zaid",
+    "bottle_gourd",
+    "pumpkin",
+    "muskmelon",
+    "sugarcane",
+    "banana",
+    "papaya",
+    "coconut"
+  ],
+  "crop_catalog": {
+    "wheat": {
+      "name": "Wheat",
+      "icon": "\ud83c\udf3e",
+      "season": "Rabi",
+      "days": "115-140",
+      "waterNeed": "Medium",
+      "baseIncome": 45000,
+      "msp": 2275
+    },
+    "mustard": {
+      "name": "Mustard",
+      "icon": "\ud83c\udf3b",
+      "season": "Rabi",
+      "days": "90-110",
+      "waterNeed": "Low",
+      "baseIncome": 28000,
+      "msp": 5650
+    },
+    "chickpea": {
+      "name": "Chickpea",
+      "icon": "\ud83d\udfe4",
+      "season": "Rabi",
+      "days": "95-120",
+      "waterNeed": "VeryLow",
+      "baseIncome": 32000,
+      "msp": 5440
+    },
+    "barley": {
+      "name": "Barley",
+      "icon": "\ud83c\udf3f",
+      "season": "Rabi",
+      "days": "80-100",
+      "waterNeed": "Low",
+      "baseIncome": 22000,
+      "msp": 1635
+    },
+    "lentil": {
+      "name": "Lentil (Masoor)",
+      "icon": "\ud83e\uded8",
+      "season": "Rabi",
+      "days": "100-120",
+      "waterNeed": "VeryLow",
+      "baseIncome": 30000,
+      "msp": 6425
+    },
+    "pea": {
+      "name": "Pea",
+      "icon": "\ud83d\udfe2",
+      "season": "Rabi",
+      "days": "80-100",
+      "waterNeed": "Low",
+      "baseIncome": 35000,
+      "msp": 0
+    },
+    "potato": {
+      "name": "Potato",
+      "icon": "\ud83e\udd54",
+      "season": "Rabi",
+      "days": "70-90",
+      "waterNeed": "Medium",
+      "baseIncome": 50000,
+      "msp": 0
+    },
+    "onion": {
+      "name": "Onion",
+      "icon": "\ud83e\uddc5",
+      "season": "Rabi",
+      "days": "110-130",
+      "waterNeed": "Medium",
+      "baseIncome": 48000,
+      "msp": 0
+    },
+    "garlic": {
+      "name": "Garlic",
+      "icon": "\ud83e\uddc4",
+      "season": "Rabi",
+      "days": "130-180",
+      "waterNeed": "Low",
+      "baseIncome": 55000,
+      "msp": 0
+    },
+    "spinach": {
+      "name": "Spinach",
+      "icon": "\ud83e\udd6c",
+      "season": "Rabi",
+      "days": "40-60",
+      "waterNeed": "Medium",
+      "baseIncome": 25000,
+      "msp": 0
+    },
+    "carrot": {
+      "name": "Carrot",
+      "icon": "\ud83e\udd55",
+      "season": "Rabi",
+      "days": "90-120",
+      "waterNeed": "Medium",
+      "baseIncome": 40000,
+      "msp": 0
+    },
+    "coriander": {
+      "name": "Coriander",
+      "icon": "\ud83c\udf3f",
+      "season": "Rabi",
+      "days": "40-50",
+      "waterNeed": "Low",
+      "baseIncome": 30000,
+      "msp": 0
+    },
+    "fenugreek": {
+      "name": "Fenugreek (Methi)",
+      "icon": "\ud83c\udf3f",
+      "season": "Rabi",
+      "days": "90-110",
+      "waterNeed": "Low",
+      "baseIncome": 25000,
+      "msp": 0
+    },
+    "linseed": {
+      "name": "Linseed (Flax)",
+      "icon": "\ud83c\udf3b",
+      "season": "Rabi",
+      "days": "120-150",
+      "waterNeed": "Low",
+      "baseIncome": 22000,
+      "msp": 6020
+    },
+    "safflower": {
+      "name": "Safflower",
+      "icon": "\ud83c\udf38",
+      "season": "Rabi",
+      "days": "150-180",
+      "waterNeed": "VeryLow",
+      "baseIncome": 20000,
+      "msp": 5800
+    },
+    "gram_fodder": {
+      "name": "Gram (Fodder)",
+      "icon": "\ud83c\udf31",
+      "season": "Rabi",
+      "days": "50-70",
+      "waterNeed": "Low",
+      "baseIncome": 15000,
+      "msp": 0
+    },
+    "radish": {
+      "name": "Radish",
+      "icon": "\ud83c\udf31",
+      "season": "Rabi",
+      "days": "25-35",
+      "waterNeed": "Medium",
+      "baseIncome": 20000,
+      "msp": 0
+    },
+    "cauliflower": {
+      "name": "Cauliflower",
+      "icon": "\ud83e\udd66",
+      "season": "Rabi",
+      "days": "60-80",
+      "waterNeed": "Medium",
+      "baseIncome": 45000,
+      "msp": 0
+    },
+    "cabbage": {
+      "name": "Cabbage",
+      "icon": "\ud83e\udd6c",
+      "season": "Rabi",
+      "days": "60-80",
+      "waterNeed": "Medium",
+      "baseIncome": 40000,
+      "msp": 0
+    },
+    "tomato_rabi": {
+      "name": "Tomato (Winter)",
+      "icon": "\ud83c\udf45",
+      "season": "Rabi",
+      "days": "90-120",
+      "waterNeed": "Medium",
+      "baseIncome": 60000,
+      "msp": 0
+    },
+    "rice": {
+      "name": "Rice",
+      "icon": "\ud83c\udf5a",
+      "season": "Kharif",
+      "days": "120-150",
+      "waterNeed": "High",
+      "baseIncome": 38000,
+      "msp": 2183
+    },
+    "maize": {
+      "name": "Maize",
+      "icon": "\ud83c\udf3d",
+      "season": "Kharif",
+      "days": "90-110",
+      "waterNeed": "Medium",
+      "baseIncome": 30000,
+      "msp": 1962
+    },
+    "cotton": {
+      "name": "Cotton",
+      "icon": "\u2601\ufe0f",
+      "season": "Kharif",
+      "days": "160-180",
+      "waterNeed": "Medium",
+      "baseIncome": 55000,
+      "msp": 6620
+    },
+    "soybean": {
+      "name": "Soybean",
+      "icon": "\ud83e\uded8",
+      "season": "Kharif",
+      "days": "90-100",
+      "waterNeed": "Medium",
+      "baseIncome": 25000,
+      "msp": 4600
+    },
+    "groundnut": {
+      "name": "Groundnut",
+      "icon": "\ud83e\udd5c",
+      "season": "Kharif",
+      "days": "110-130",
+      "waterNeed": "Medium",
+      "baseIncome": 35000,
+      "msp": 6377
+    },
+    "sunflower": {
+      "name": "Sunflower",
+      "icon": "\ud83c\udf38",
+      "season": "Kharif",
+      "days": "90-100",
+      "waterNeed": "Low",
+      "baseIncome": 28000,
+      "msp": 6760
+    },
+    "bajra": {
+      "name": "Bajra",
+      "icon": "\ud83c\udf3e",
+      "season": "Kharif",
+      "days": "70-90",
+      "waterNeed": "VeryLow",
+      "baseIncome": 18000,
+      "msp": 2500
+    },
+    "jowar": {
+      "name": "Jowar",
+      "icon": "\ud83c\udf3e",
+      "season": "Kharif",
+      "days": "100-120",
+      "waterNeed": "Low",
+      "baseIncome": 20000,
+      "msp": 3180
+    },
+    "urad": {
+      "name": "Urad (Black Gram)",
+      "icon": "\u26ab",
+      "season": "Kharif",
+      "days": "65-85",
+      "waterNeed": "Low",
+      "baseIncome": 22000,
+      "msp": 7400
+    },
+    "moong": {
+      "name": "Moong (Green Gram)",
+      "icon": "\ud83d\udfe2",
+      "season": "Kharif",
+      "days": "60-75",
+      "waterNeed": "Low",
+      "baseIncome": 20000,
+      "msp": 8558
+    },
+    "turmeric": {
+      "name": "Turmeric",
+      "icon": "\ud83d\udfe1",
+      "season": "Kharif",
+      "days": "240-270",
+      "waterNeed": "High",
+      "baseIncome": 65000,
+      "msp": 0
+    },
+    "ginger": {
+      "name": "Ginger",
+      "icon": "\ud83e\udeda",
+      "season": "Kharif",
+      "days": "200-240",
+      "waterNeed": "High",
+      "baseIncome": 70000,
+      "msp": 0
+    },
+    "tur": {
+      "name": "Tur (Arhar)",
+      "icon": "\ud83c\udf3e",
+      "season": "Kharif",
+      "days": "160-200",
+      "waterNeed": "Low",
+      "baseIncome": 28000,
+      "msp": 7550
+    },
+    "sesame": {
+      "name": "Sesame (Til)",
+      "icon": "\ud83c\udf31",
+      "season": "Kharif",
+      "days": "80-100",
+      "waterNeed": "Low",
+      "baseIncome": 22000,
+      "msp": 8635
+    },
+    "castor": {
+      "name": "Castor",
+      "icon": "\ud83c\udf3f",
+      "season": "Kharif",
+      "days": "180-200",
+      "waterNeed": "Low",
+      "baseIncome": 25000,
+      "msp": 0
+    },
+    "cowpea": {
+      "name": "Cowpea",
+      "icon": "\ud83d\udfe2",
+      "season": "Kharif",
+      "days": "60-80",
+      "waterNeed": "Low",
+      "baseIncome": 18000,
+      "msp": 0
+    },
+    "bitter_gourd": {
+      "name": "Bitter Gourd",
+      "icon": "\ud83e\udd52",
+      "season": "Kharif",
+      "days": "55-70",
+      "waterNeed": "Medium",
+      "baseIncome": 35000,
+      "msp": 0
+    },
+    "brinjal": {
+      "name": "Brinjal (Eggplant)",
+      "icon": "\ud83c\udf46",
+      "season": "Kharif",
+      "days": "90-120",
+      "waterNeed": "Medium",
+      "baseIncome": 30000,
+      "msp": 0
+    },
+    "okra": {
+      "name": "Okra (Bhindi)",
+      "icon": "\ud83c\udf3f",
+      "season": "Kharif",
+      "days": "50-65",
+      "waterNeed": "Medium",
+      "baseIncome": 32000,
+      "msp": 0
+    },
+    "chilli": {
+      "name": "Chilli",
+      "icon": "\ud83c\udf36\ufe0f",
+      "season": "Kharif",
+      "days": "120-150",
+      "waterNeed": "Medium",
+      "baseIncome": 55000,
+      "msp": 0
+    },
+    "watermelon": {
+      "name": "Watermelon",
+      "icon": "\ud83c\udf49",
+      "season": "Zaid",
+      "days": "70-90",
+      "waterNeed": "High",
+      "baseIncome": 40000,
+      "msp": 0
+    },
+    "cucumber": {
+      "name": "Cucumber",
+      "icon": "\ud83e\udd52",
+      "season": "Zaid",
+      "days": "45-60",
+      "waterNeed": "Medium",
+      "baseIncome": 30000,
+      "msp": 0
+    },
+    "moong_zaid": {
+      "name": "Moong (Zaid)",
+      "icon": "\ud83c\udf31",
+      "season": "Zaid",
+      "days": "55-65",
+      "waterNeed": "Low",
+      "baseIncome": 18000,
+      "msp": 8558
+    },
+    "bottle_gourd": {
+      "name": "Bottle Gourd",
+      "icon": "\ud83e\uded9",
+      "season": "Zaid",
+      "days": "60-75",
+      "waterNeed": "Medium",
+      "baseIncome": 25000,
+      "msp": 0
+    },
+    "pumpkin": {
+      "name": "Pumpkin",
+      "icon": "\ud83c\udf83",
+      "season": "Zaid",
+      "days": "80-100",
+      "waterNeed": "Medium",
+      "baseIncome": 22000,
+      "msp": 0
+    },
+    "muskmelon": {
+      "name": "Muskmelon",
+      "icon": "\ud83c\udf48",
+      "season": "Zaid",
+      "days": "70-90",
+      "waterNeed": "Medium",
+      "baseIncome": 35000,
+      "msp": 0
+    },
+    "sugarcane": {
+      "name": "Sugarcane",
+      "icon": "\ud83c\udf8b",
+      "season": "Annual",
+      "days": "300-360",
+      "waterNeed": "VeryHigh",
+      "baseIncome": 70000,
+      "msp": 340
+    },
+    "banana": {
+      "name": "Banana",
+      "icon": "\ud83c\udf4c",
+      "season": "Annual",
+      "days": "270-365",
+      "waterNeed": "High",
+      "baseIncome": 80000,
+      "msp": 0
+    },
+    "papaya": {
+      "name": "Papaya",
+      "icon": "\ud83e\udde1",
+      "season": "Annual",
+      "days": "240-300",
+      "waterNeed": "Medium",
+      "baseIncome": 65000,
+      "msp": 0
+    },
+    "coconut": {
+      "name": "Coconut",
+      "icon": "\ud83e\udd65",
+      "season": "Annual",
+      "days": "365+",
+      "waterNeed": "High",
+      "baseIncome": 50000,
+      "msp": 0
+    }
+  },
+  "feature_names": [
+    "ph",
+    "nitrogen",
+    "phosphorus",
+    "potassium",
+    "temperature",
+    "rainfall",
+    "season_code",
+    "soil_code",
+    "humidity",
+    "wind_speed",
+    "organic_carbon",
+    "zinc",
+    "region_code",
+    "irrigation_code"
+  ],
+  "n_features": 14,
+  "soil_encoding": {
+    "alluvial": 0,
+    "black": 1,
+    "red": 2,
+    "sandy": 3,
+    "clay": 4,
+    "laterite": 5,
+    "loamy": 6,
+    "silt": 7
+  },
+  "season_encoding": {
+    "rabi": 0,
+    "kharif": 1,
+    "zaid": 2,
+    "annual": 3
+  },
+  "irrigation_encoding": {
+    "canal": 0,
+    "borewell": 1,
+    "rain": 2,
+    "drip": 3,
+    "sprinkler": 4
+  },
+  "region_encoding": {
+    "nw_plains": 0,
+    "central": 1,
+    "south": 2,
+    "east": 3,
+    "northeast": 4,
+    "west": 5,
+    "hills": 6
+  },
+  "state_region_map": {
+    "Punjab": "nw_plains",
+    "Haryana": "nw_plains",
+    "Uttar Pradesh": "nw_plains",
+    "Delhi": "nw_plains",
+    "Chandigarh": "nw_plains",
+    "Madhya Pradesh": "central",
+    "Maharashtra": "central",
+    "Chhattisgarh": "central",
+    "Andhra Pradesh": "south",
+    "Telangana": "south",
+    "Karnataka": "south",
+    "Tamil Nadu": "south",
+    "Kerala": "south",
+    "Goa": "south",
+    "Puducherry": "south",
+    "Bihar": "east",
+    "West Bengal": "east",
+    "Odisha": "east",
+    "Jharkhand": "east",
+    "Assam": "northeast",
+    "Meghalaya": "northeast",
+    "Nagaland": "northeast",
+    "Manipur": "northeast",
+    "Mizoram": "northeast",
+    "Tripura": "northeast",
+    "Arunachal Pradesh": "northeast",
+    "Sikkim": "northeast",
+    "Rajasthan": "west",
+    "Gujarat": "west",
+    "Dadra and Nagar Haveli and Daman and Diu": "west",
+    "Himachal Pradesh": "hills",
+    "Uttarakhand": "hills",
+    "Jammu and Kashmir": "hills",
+    "Ladakh": "hills"
+  },
+  "n_samples": 5000,
+  "n_classes": 50,
+  "model_scores": {
+    "RandomForest": {
+      "accuracy_mean": 0.9788,
+      "accuracy_std": 0.002638181191654586,
+      "accuracy_min": 0.977,
+      "accuracy_max": 0.984,
+      "f1_mean": 0.9786943788440101,
+      "f1_std": 0.0026640317287253824
+    },
+    "GradientBoosting": {
+      "accuracy_mean": 0.9702,
+      "accuracy_std": 0.005306599664568644,
+      "accuracy_min": 0.964,
+      "accuracy_max": 0.977,
+      "f1_mean": 0.9701765055697111,
+      "f1_std": 0.005240738132036518
+    },
+    "ExtraTrees": {
+      "accuracy_mean": 0.9853999999999999,
+      "accuracy_std": 0.003826225293941802,
+      "accuracy_min": 0.981,
+      "accuracy_max": 0.992,
+      "f1_mean": 0.9853271890758473,
+      "f1_std": 0.0038442992262785283
+    },
+    "AdaBoost": {
+      "accuracy_mean": 0.1036,
+      "accuracy_std": 0.015081114017207081,
+      "accuracy_min": 0.079,
+      "accuracy_max": 0.12,
+      "f1_mean": 0.044436550609631434,
+      "f1_std": 0.011425741230133462
+    },
+    "Bagging": {
+      "accuracy_mean": 0.9640000000000001,
+      "accuracy_std": 0.0066932802122726094,
+      "accuracy_min": 0.958,
+      "accuracy_max": 0.976,
+      "f1_mean": 0.9636852177714343,
+      "f1_std": 0.006786456463407539
+    },
+    "SVM_RBF": {
+      "accuracy_mean": 0.9506,
+      "accuracy_std": 0.011217842929904106,
+      "accuracy_min": 0.935,
+      "accuracy_max": 0.964,
+      "f1_mean": 0.946765498544017,
+      "f1_std": 0.013802224917361064
+    },
+    "KNN": {
+      "accuracy_mean": 0.9846,
+      "accuracy_std": 0.003878143885933067,
+      "accuracy_min": 0.98,
+      "accuracy_max": 0.99,
+      "f1_mean": 0.9845119669414025,
+      "f1_std": 0.0038904872903594216
+    },
+    "LogisticRegression": {
+      "accuracy_mean": 0.9640000000000001,
+      "accuracy_std": 0.005329165037789696,
+      "accuracy_min": 0.956,
+      "accuracy_max": 0.971,
+      "f1_mean": 0.963721071792872,
+      "f1_std": 0.005272057884338027
+    },
+    "DecisionTree": {
+      "accuracy_mean": 0.9226000000000001,
+      "accuracy_std": 0.004079215610874231,
+      "accuracy_min": 0.918,
+      "accuracy_max": 0.928,
+      "f1_mean": 0.9154673273643977,
+      "f1_std": 0.0035485807276737784
+    },
+    "VotingEnsemble": {
+      "accuracy_mean": 0.9822,
+      "accuracy_std": 0.0033704599092705466,
+      "accuracy_min": 0.978,
+      "accuracy_max": 0.986,
+      "f1_mean": 0.9820483914207052,
+      "f1_std": 0.0034023578445614234
+    }
+  },
+  "best_model": "ExtraTrees",
+  "best_accuracy": "98.5%",
+  "top5_ensemble": [
+    "ExtraTrees",
+    "KNN",
+    "RandomForest",
+    "GradientBoosting",
+    "Bagging"
+  ],
+  "trained_at": "2026-04-02T23:08:47.841065",
+  "notes": "v4: 50 crops, 14 features incl irrigation, season strictly enforced per crop"
+}

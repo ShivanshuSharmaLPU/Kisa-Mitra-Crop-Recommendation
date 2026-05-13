@@ -1,0 +1,36 @@
+{
+  "name": "kisanmitra-ml",
+  "version": "2.0.0",
+  "description": "KisanMitra — Standalone ML Module (PKL models + inference service)",
+  "private": true,
+ "scripts": {
+  "train":        "cd training && python train_all.py",
+  "train:crop":   "cd training && python train_all.py crop",
+  "train:soil":   "cd training && python train_all.py soil",
+  "train:pest":   "cd training && python train_all.py pest",
+  "train:market": "cd training && python train_all.py market",
+  "serve":        "cd service && python ml_server.py",
+  "serve:port":   "cd service && python ml_server.py --port",
+  "test":         "cd tests && python test_models.py",
+  "status":       "node -e \"const ml=require('./bridge/mlBridge'); ml.service.status().then(s=>console.log(JSON.stringify(s,null,2)))\""
+},
+  "engineRequirements": {
+    "node": ">=23.11.1",
+    "python": ">=3.8.0"
+  },
+  "pythonDependencies": {
+    "scikit-learn": ">=1.3.0",
+    "numpy": ">=1.24.0",
+    "pandas": ">=2.0.0",
+    "scipy": ">=1.11.0",
+    "joblib": ">=1.3.0"
+  },
+  "structure": {
+    "ML/models/":   "PKL model files + JSON metadata",
+    "ML/training/": "Python training scripts",
+    "ML/service/":  "Python HTTP inference server",
+    "ML/bridge/":   "Node.js bridge to Python ML service",
+    "ML/utils/":    "Shared Python utilities",
+    "ML/tests/":    "Model testing & validation scripts"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "model_type": "market_predictor",
+  "trend_classes": [
+    "down",
+    "stable",
+    "up"
+  ],
+  "commodity_encoding": {
+    "wheat": 0,
+    "rice": 1,
+    "maize": 2,
+    "cotton": 3,
+    "mustard": 4,
+    "soybean": 5,
+    "sugarcane": 6,
+    "onion": 7,
+    "potato": 8,
+    "tomato": 9
+  },
+  "feature_names": [
+    "commodity_code",
+    "season_code",
+    "month",
+    "rainfall_l30",
+    "temp_avg",
+    "prev_price",
+    "prev_msp_ratio",
+    "msp",
+    "supply_index",
+    "demand_index"
+  ],
+  "model_scores": {
+    "RandomForest": {
+      "accuracy_mean": 0.9777777777777779,
+      "accuracy_std": 0.04444444444444447,
+      "accuracy_min": 0.8888888888888888,
+      "accuracy_max": 1.0,
+      "f1_mean": 0.9750841750841751,
+      "f1_std": 0.04983164983164988
+    },
+    "GradientBoosting": {
+      "accuracy_mean": 0.9777777777777779,
+      "accuracy_std": 0.04444444444444447,
+      "accuracy_min": 0.8888888888888888,
+      "accuracy_max": 1.0,
+      "f1_mean": 0.9750841750841751,
+      "f1_std": 0.04983164983164988
+    },
+    "ExtraTrees": {
+      "accuracy_mean": 0.9777777777777779,
+      "accuracy_std": 0.04444444444444447,
+      "accuracy_min": 0.8888888888888888,
+      "accuracy_max": 1.0,
+      "f1_mean": 0.9750841750841751,
+      "f1_std": 0.04983164983164988
+    },
+    "SVM": {
+      "accuracy_mean": 0.9111111111111111,
+      "accuracy_std": 0.08314794192830981,
+      "accuracy_min": 0.7777777777777778,
+      "accuracy_max": 1.0,
+      "f1_mean": 0.890758377425044,
+      "f1_std": 0.11517949113097839
+    },
+    "KNN": {
+      "accuracy_mean": 0.7333333333333333,
+      "accuracy_std": 0.16629588385661961,
+      "accuracy_min": 0.4444444444444444,
+      "accuracy_max": 0.8888888888888888,
+      "f1_mean": 0.728747795414462,
+      "f1_std": 0.16204802059980083
+    },
+    "Logistic": {
+      "accuracy_mean": 0.9111111111111111,
+      "accuracy_std": 0.10886621079036347,
+      "accuracy_min": 0.7777777777777778,
+      "accuracy_max": 1.0,
+      "f1_mean": 0.9147089947089947,
+      "f1_std": 0.10461450803442723
+    },
+    "VotingEnsemble": {
+      "accuracy_mean": 0.9777777777777779,
+      "accuracy_std": 0.04444444444444447,
+      "accuracy_min": 0.8888888888888888,
+      "accuracy_max": 1.0,
+      "f1_mean": 0.9750841750841751,
+      "f1_std": 0.04983164983164988
+    }
+  },
+  "best_model": "RandomForest",
+  "trained_at": "2026-03-15T00:38:16.281534"
+}

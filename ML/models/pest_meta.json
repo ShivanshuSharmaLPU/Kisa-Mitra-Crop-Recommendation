@@ -1,0 +1,224 @@
+{
+  "model_type": "pest_classifier",
+  "pest_classes": [
+    "powdery_mildew",
+    "brown_planthopper",
+    "aphids",
+    "yellow_rust",
+    "stem_borer",
+    "whitefly",
+    "bollworm",
+    "leaf_curl",
+    "blast",
+    "armyworm"
+  ],
+  "pest_database": {
+    "powdery_mildew": {
+      "name": "Powdery Mildew",
+      "severity": "moderate",
+      "affectedCrops": [
+        "Wheat",
+        "Mustard",
+        "Pea"
+      ],
+      "symptoms": "White powdery patches on leaves, yellowing",
+      "chemical": "Sulphur 80WP 3g/L or Propiconazole",
+      "organic": "Neem oil 5ml/L",
+      "preventive": "Resistant varieties, good airflow",
+      "spreadRisk": "HIGH in cool humid conditions"
+    },
+    "brown_planthopper": {
+      "name": "Brown Planthopper",
+      "severity": "high",
+      "affectedCrops": [
+        "Rice"
+      ],
+      "symptoms": "Hopper burn, brown patches, wilting at base",
+      "chemical": "Imidacloprid 17.8SL 0.3ml/L",
+      "organic": "Beauveria bassiana 2g/L",
+      "preventive": "Avoid dense planting",
+      "spreadRisk": "VERY HIGH"
+    },
+    "aphids": {
+      "name": "Aphids",
+      "severity": "low",
+      "affectedCrops": [
+        "Mustard",
+        "Vegetables"
+      ],
+      "symptoms": "Curled yellow leaves, sticky honeydew, ants",
+      "chemical": "Dimethoate 30EC 2ml/L",
+      "organic": "Neem oil 5ml/L, strong water spray",
+      "preventive": "Yellow sticky traps",
+      "spreadRisk": "MEDIUM"
+    },
+    "yellow_rust": {
+      "name": "Yellow Rust",
+      "severity": "high",
+      "affectedCrops": [
+        "Wheat",
+        "Barley"
+      ],
+      "symptoms": "Yellow-orange stripe pustules along leaf veins",
+      "chemical": "Propiconazole 25EC 1ml/L",
+      "organic": "No effective organic treatment",
+      "preventive": "Resistant varieties",
+      "spreadRisk": "VERY HIGH \u2014 wind-borne"
+    },
+    "stem_borer": {
+      "name": "Stem Borer",
+      "severity": "high",
+      "affectedCrops": [
+        "Rice",
+        "Maize",
+        "Sugarcane"
+      ],
+      "symptoms": "Dead heart, white ear, entry holes at base of stems",
+      "chemical": "Chlorpyrifos 20EC 2ml/L",
+      "organic": "Trichogramma egg parasitoid release",
+      "preventive": "Early sowing, remove stubble",
+      "spreadRisk": "HIGH"
+    },
+    "whitefly": {
+      "name": "Whitefly",
+      "severity": "moderate",
+      "affectedCrops": [
+        "Cotton",
+        "Tomato",
+        "Chili"
+      ],
+      "symptoms": "Yellowing, curled leaves, white insects under leaf",
+      "chemical": "Thiamethoxam 25WG 0.2g/L",
+      "organic": "Yellow sticky traps, neem 5ml/L",
+      "preventive": "Reflective mulches",
+      "spreadRisk": "HIGH \u2014 virus vector"
+    },
+    "bollworm": {
+      "name": "Bollworm",
+      "severity": "high",
+      "affectedCrops": [
+        "Cotton",
+        "Tomato"
+      ],
+      "symptoms": "Entry holes in bolls/fruits, frass, caterpillars inside",
+      "chemical": "Profenofos 50EC 2ml/L",
+      "organic": "Bt spray (Bacillus thuringiensis) 2g/L",
+      "preventive": "Bt cotton, pheromone traps",
+      "spreadRisk": "HIGH"
+    },
+    "leaf_curl": {
+      "name": "Leaf Curl Virus",
+      "severity": "high",
+      "affectedCrops": [
+        "Cotton",
+        "Chili",
+        "Tobacco"
+      ],
+      "symptoms": "Upward leaf curl, vein thickening, stunted growth",
+      "chemical": "Control whitefly vector: Imidacloprid",
+      "organic": "Neem oil 5ml/L to control whitefly",
+      "preventive": "Virus-resistant varieties",
+      "spreadRisk": "VERY HIGH \u2014 viral"
+    },
+    "blast": {
+      "name": "Rice Blast",
+      "severity": "high",
+      "affectedCrops": [
+        "Rice"
+      ],
+      "symptoms": "Diamond-shaped gray lesions with brown border on leaves",
+      "chemical": "Tricyclazole 75WP 0.6g/L",
+      "organic": "Silicon soil amendments",
+      "preventive": "Resistant varieties, balanced N",
+      "spreadRisk": "HIGH in cool wet weather"
+    },
+    "armyworm": {
+      "name": "Fall Armyworm",
+      "severity": "high",
+      "affectedCrops": [
+        "Maize",
+        "Wheat",
+        "Sorghum"
+      ],
+      "symptoms": "Leaf skeletonization, whorls filled with frass, caterpillars",
+      "chemical": "Chlorpyrifos 20EC 2ml/L into whorl",
+      "organic": "Bt spray, neem 5ml/L",
+      "preventive": "Early detection, community approach",
+      "spreadRisk": "VERY HIGH \u2014 migratory"
+    }
+  },
+  "feature_names": [
+    "crop_rice",
+    "crop_wheat",
+    "crop_cotton",
+    "crop_maize",
+    "crop_mustard",
+    "sym_yellow",
+    "sym_white",
+    "sym_brown",
+    "sym_curl",
+    "sym_hole",
+    "sym_sticky",
+    "sym_pustule",
+    "sym_wilting",
+    "sym_mold",
+    "sym_stripe",
+    "season_rabi",
+    "season_kharif",
+    "temp_high",
+    "humidity_high"
+  ],
+  "n_samples": 53,
+  "model_scores": {
+    "RandomForest": {
+      "accuracy_mean": 0.8672727272727272,
+      "accuracy_std": 0.04796693075735604,
+      "accuracy_min": 0.8,
+      "accuracy_max": 0.9090909090909091,
+      "f1_mean": 0.8357575757575756,
+      "f1_std": 0.06175873552900362
+    },
+    "GradientBoosting": {
+      "accuracy_mean": 0.8290909090909091,
+      "accuracy_std": 0.04081808058298842,
+      "accuracy_min": 0.8,
+      "accuracy_max": 0.9090909090909091,
+      "f1_mean": 0.7815151515151515,
+      "f1_std": 0.06439946500356687
+    },
+    "ExtraTrees": {
+      "accuracy_mean": 0.9054545454545455,
+      "accuracy_std": 0.057668187371468005,
+      "accuracy_min": 0.8181818181818182,
+      "accuracy_max": 1.0,
+      "f1_mean": 0.8799999999999999,
+      "f1_std": 0.07821704632679605
+    },
+    "SVM_RBF": {
+      "accuracy_mean": 0.889090909090909,
+      "accuracy_std": 0.06764027359177552,
+      "accuracy_min": 0.8181818181818182,
+      "accuracy_max": 1.0,
+      "f1_mean": 0.864242424242424,
+      "f1_std": 0.08678313851960608
+    },
+    "KNN": {
+      "accuracy_mean": 0.9072727272727272,
+      "accuracy_std": 0.05761083461001766,
+      "accuracy_min": 0.8181818181818182,
+      "accuracy_max": 1.0,
+      "f1_mean": 0.8824242424242424,
+      "f1_std": 0.06787878787878789
+    },
+    "VotingEnsemble": {
+      "accuracy_mean": 0.8690909090909091,
+      "accuracy_std": 0.09510324967725105,
+      "accuracy_min": 0.7272727272727273,
+      "accuracy_max": 1.0,
+      "f1_mean": 0.8348484848484847,
+      "f1_std": 0.12752500250000495
+    }
+  },
+  "best_model": "KNN",
+  "trained_at": "2026-03-15T00:37:07.247106"
+}
